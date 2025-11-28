@@ -36,10 +36,12 @@
   - Остатки по категориям и локациям
 
 ## Для запуска
-1. ```bash
+1. 
+```bash
 ./gradlew bootJar
 ```
 
-2. ```
+2. 
+```bash
 docker compose up -d
 ```
