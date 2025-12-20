@@ -15,12 +15,12 @@ description = "db-project"
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(24)
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
 kotlin {
-    jvmToolchain(24)
+    jvmToolchain(21)
 
     compilerOptions {
         freeCompilerArgs.addAll(
@@ -49,9 +49,7 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
-tasks.withType<JavaCompile> {
-    options.release.set(24)
-}
+
 
 allOpen {
     annotation("jakarta.persistence.Entity")

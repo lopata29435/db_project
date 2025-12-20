@@ -36,12 +36,12 @@
   - Остатки по категориям и локациям
 
 ## Для запуска
-1. 
+1. Соберите приложение локально:
 ```bash
 ./gradlew bootJar
 ```
 
-2. 
+2. Запустите контейнеры:
 ```bash
-docker compose up -d
+docker compose up -d --build
 ```
